@@ -88,33 +88,58 @@ class Pattern {
         // //     System.out.println();
         // // }
 
-        //* Inverted Half Pyramid
+        // //* Inverted Half Pyramid
 
+        // //?     * * * * *
+        // //?     * * * * 
+        // //?     * * * 
+        // //?     * * 
+        // //?     * 
+
+        // int n = 5;
+
+        // for (int i = n; i >= 1; i--) {
+        //     String str = "";
+
+        //     for (int j = 1; j <= i; j++) {
+        //         str += "* ";
+        //     }
+
+        //     System.out.println(str);
+        // }
+
+        // for (int i = n; i >= 1; i--) {
+            
+        //     for (int j = 1; j <= i; j++) {
+        //         System.out.print("* ");
+        //     }
+
+        //     System.out.println();
+        // }
+
+        //* Inverted Half Pyramid (rotate 180deg)
+
+        //?             *
+        //?           * *
+        //?         * * *
+        //?       * * * *
         //?     * * * * *
-        //?     * * * * 
-        //?     * * * 
-        //?     * * 
-        //?     * 
 
         int n = 5;
 
-        for (int i = n; i >= 1; i--) {
+        for (int i = 1; i <= n; i++) {
             String str = "";
 
-            for (int j = 1; j <= i; j++) {
-                str += "* ";
+            for (int j = n; j >= 1; j--) {
+
+                if (j <= i) {
+                    str += " *";
+                } else {
+                    str += "  ";
+                }
             }
 
             System.out.println(str);
-        }
-
-        for (int i = n; i >= 1; i--) {
-            
-            for (int j = 1; j <= i; j++) {
-                System.out.print("* ");
-            }
-
-            System.out.println();
         }
 
     }
