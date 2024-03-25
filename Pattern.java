@@ -23,12 +23,12 @@ class Pattern {
         // //         System.out.println();
         // // }
 
-        // * Hollow Rectangle
+        // //* Hollow Rectangle
 
-        // // ?    * * * * *
-        // // ?    *       *
-        // // ?    *       *
-        // // ?    * * * * *
+        // //?    * * * * *
+        // //?    *       *
+        // //?    *       *
+        // //?    * * * * *
 
         // int n = 4;
         // int m = 4;
@@ -58,17 +58,47 @@ class Pattern {
         //     System.out.println(str);
         // }
 
-        //* Half Pyramid
+        // //* Half Pyramid
 
-        //?     *
-        //?     * *
-        //?     * * *
-        //?     * * * *
+        // //?     *
+        // //?     * *
+        // //?     * * *
+        // //?     * * * *
+        // //?     * * * * *
+
+        // int n = 5;
+
+        // for (int i = 1; i <= n; i++) {
+        //     String str = "";
+
+        //     for (int j = 1; j <= i; j++) {
+        //         str += "* ";
+        //     }
+
+        //     System.out.println(str);
+        // }
+
+        // // another solution
+        // // for (int i = 1; i <= n; i++) {
+            
+        // //     for (int j = 1; j <= i; j++) {
+        // //         System.out.print("* ");
+        // //     }
+
+        // //     System.out.println();
+        // // }
+
+        //* Inverted Half Pyramid
+
         //?     * * * * *
+        //?     * * * * 
+        //?     * * * 
+        //?     * * 
+        //?     * 
 
         int n = 5;
 
-        for (int i = 1; i <= n; i++) {
+        for (int i = n; i >= 1; i--) {
             String str = "";
 
             for (int j = 1; j <= i; j++) {
@@ -78,16 +108,14 @@ class Pattern {
             System.out.println(str);
         }
 
-        // another solution
-        // for (int i = 1; i <= n; i++) {
+        for (int i = n; i >= 1; i--) {
             
-        //     for (int j = 1; j <= i; j++) {
-        //         System.out.print("* ");
-        //     }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
 
-        //     System.out.println();
-        // }
-
+            System.out.println();
+        }
 
     }
 }
