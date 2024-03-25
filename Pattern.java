@@ -142,18 +142,38 @@ class Pattern {
         //     System.out.println(str);
         // }
 
-        //* Half Pyramid with Numbers
+        // //* Half Pyramid with Numbers
 
-        //? 1
-        //? 1 2
-        //? 1 2 3
-        //? 1 2 3 4
+        // //? 1
+        // //? 1 2
+        // //? 1 2 3
+        // //? 1 2 3 4
+        // //? 1 2 3 4 5
+
+        // int n = 5;
+        
+        // for (int i =1; i<=n; i++) {
+        //     String str = "";
+        //     for (int j = 1; j <= i; j++) {
+        //         str += j + " ";
+        //     }
+
+        //     System.out.println(str);
+        // }
+
+        //* Inverted Half Pyramid with Numbers
+
         //? 1 2 3 4 5
+        //? 1 2 3 4 
+        //? 1 2 3 
+        //? 1 2 
+        //? 1 
 
         int n = 5;
-        
-        for (int i =1; i<=n; i++) {
+
+        for (int i = n; i >= 1; i--) {
             String str = "";
+
             for (int j = 1; j <= i; j++) {
                 str += j + " ";
             }
