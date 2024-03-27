@@ -289,32 +289,62 @@ class Pattern {
 
         // }
 
-         //* Solid Rhombus Pattern
+        //  //* Solid Rhombus Pattern
 
-        //?     *****
-        //?    *****
-        //?   *****
-        //?  *****
-        //? *****
+        // //?     *****
+        // //?    *****
+        // //?   *****
+        // //?  *****
+        // //? *****
 
+
+        // int n = 5;
+
+        // for (int i = 1; i <= n; i++) {
+
+        //     String str = "";
+            
+        //     int spaces = n - i;
+
+        //     for (int j = 1; j <= spaces; j++) {
+        //         str += " ";
+        //     }
+
+        //     for (int j = 1; j <= n; j++) {
+        //         str += "*";
+        //     }
+
+        //     System.out.println(str);
+        // }
+
+        //* Number Pyramid
+
+        //?         1    
+        //?        2 2
+        //?       3 3 3
+        //?      4 4 4 4
+        //?     5 5 5 5 5
 
         int n = 5;
 
-        for (int i = 1; i <= n; i++) {
+        for(int i = 1; i <= n; i++) {
 
             String str = "";
-            
+
             int spaces = n - i;
 
             for (int j = 1; j <= spaces; j++) {
                 str += " ";
             }
 
-            for (int j = 1; j <= n; j++) {
-                str += "*";
+            for (int j = 1; j <= i; j++) {
+
+                str += i + " ";
+
             }
 
             System.out.println(str);
+
         }
     }
 }
