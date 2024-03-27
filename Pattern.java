@@ -161,25 +161,47 @@ class Pattern {
         //     System.out.println(str);
         // }
 
-        //* Inverted Half Pyramid with Numbers
+        // //* Inverted Half Pyramid with Numbers
 
-        //? 1 2 3 4 5
-        //? 1 2 3 4 
-        //? 1 2 3 
-        //? 1 2 
-        //? 1 
+        // //? 1 2 3 4 5
+        // //? 1 2 3 4 
+        // //? 1 2 3 
+        // //? 1 2 
+        // //? 1 
+
+        // int n = 5;
+
+        // for (int i = n; i >= 1; i--) {
+        //     String str = "";
+
+        //     for (int j = 1; j <= i; j++) {
+        //         str += j + " ";
+        //     }
+
+        //     System.out.println(str);
+        // }
+
+
+        //* Floyd's Triangle
+
+        //? 1
+        //? 2   3
+        //? 4   5   6
+        //? 7   8   9   10
+        //? 11  12  13  14  15
 
         int n = 5;
+        int num = 1;
 
-        for (int i = n; i >= 1; i--) {
+        for (int i = 1; i <= n; i++) {
             String str = "";
 
             for (int j = 1; j <= i; j++) {
-                str += j + " ";
+                str += num + " ";
+                num++;
             }
 
             System.out.println(str);
         }
-
     }
 }
