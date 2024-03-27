@@ -204,29 +204,85 @@ class Pattern {
         //     System.out.println(str);
         // }
 
-         //* 0 - 1 Triangle
+        //  //* 0 - 1 Triangle
 
-        //?     1
-        //?     0 1
-        //?     1 0 1
-        //?     0 1 0 1
-        //?     1 0 1 0 1
+        // //?     1
+        // //?     0 1
+        // //?     1 0 1
+        // //?     0 1 0 1
+        // //?     1 0 1 0 1
 
-        //? Let's assume. Even = 1; Odd = 0;
+        // //? Let's assume. Even = 1; Odd = 0;
 
-        int n = 5;
+        // int n = 5;
+
+        // for (int i = 1; i <= n; i++) {
+
+        //     String str = "";
+
+        //     for (int j = 1; j <= i; j++) {
+        //         // System.out.print(i % j);
+        //         if ((i+j) % 2 == 0) {
+        //             str += 1 + " ";
+        //         } else {
+        //             str += 0 + " ";
+        //         }
+        //     }
+
+        //     System.out.println(str);
+
+        // }
+
+        //* Butterfly Pattern
+        
+        //?     *             *
+        //?     * *         * *
+        //?     * * *     * * *
+        //?     * * * * * * * *
+        //?     * * * * * * * *
+        //?     * * *     * * *
+        //?     * *         * *
+        //?     *             *
+
+        int n = 4;
+        int totalSell = 8;
 
         for (int i = 1; i <= n; i++) {
+            String str = "";
+            
+            for (int j = 1; j <= i; j++) {
+                str += "*";
+            }
+
+            int spaces = 2 * (n - i);
+
+            for (int j = 1; j <= spaces; j++) {
+                str += " ";
+            }
+
+            for (int j = 1; j <= i; j++) {
+                str += "*";
+            }
+
+            System.out.println(str);
+        }
+
+        for (int i = n; i >= 1; i--) {
 
             String str = "";
 
             for (int j = 1; j <= i; j++) {
-                // System.out.print(i % j);
-                if ((i+j) % 2 == 0) {
-                    str += 1 + " ";
-                } else {
-                    str += 0 + " ";
-                }
+                str += "*";
+            }
+
+            int spaces = 2 * (n - i);
+
+            for (int j = 1; j <= spaces; j++) {
+                str += " ";
+            }
+
+            for (int j = 1; j <= i; j++) {
+                str += "*";
             }
 
             System.out.println(str);
