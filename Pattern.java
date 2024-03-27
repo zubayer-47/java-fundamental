@@ -233,60 +233,88 @@ class Pattern {
 
         // }
 
-        //* Butterfly Pattern
+        // //* Butterfly Pattern
         
-        //?     *             *
-        //?     * *         * *
-        //?     * * *     * * *
-        //?     * * * * * * * *
-        //?     * * * * * * * *
-        //?     * * *     * * *
-        //?     * *         * *
-        //?     *             *
+        // //?     *             *
+        // //?     * *         * *
+        // //?     * * *     * * *
+        // //?     * * * * * * * *
+        // //?     * * * * * * * *
+        // //?     * * *     * * *
+        // //?     * *         * *
+        // //?     *             *
 
-        int n = 4;
-        int totalSell = 8;
+        // int n = 4;
+        // int totalSell = 8;
+
+        // for (int i = 1; i <= n; i++) {
+        //     String str = "";
+            
+        //     for (int j = 1; j <= i; j++) {
+        //         str += "*";
+        //     }
+
+        //     int spaces = 2 * (n - i);
+
+        //     for (int j = 1; j <= spaces; j++) {
+        //         str += " ";
+        //     }
+
+        //     for (int j = 1; j <= i; j++) {
+        //         str += "*";
+        //     }
+
+        //     System.out.println(str);
+        // }
+
+        // for (int i = n; i >= 1; i--) {
+
+        //     String str = "";
+
+        //     for (int j = 1; j <= i; j++) {
+        //         str += "*";
+        //     }
+
+        //     int spaces = 2 * (n - i);
+
+        //     for (int j = 1; j <= spaces; j++) {
+        //         str += " ";
+        //     }
+
+        //     for (int j = 1; j <= i; j++) {
+        //         str += "*";
+        //     }
+
+        //     System.out.println(str);
+
+        // }
+
+         //* Solid Rhombus Pattern
+
+        //?     *****
+        //?    *****
+        //?   *****
+        //?  *****
+        //? *****
+
+
+        int n = 5;
 
         for (int i = 1; i <= n; i++) {
+
             String str = "";
             
-            for (int j = 1; j <= i; j++) {
-                str += "*";
-            }
-
-            int spaces = 2 * (n - i);
+            int spaces = n - i;
 
             for (int j = 1; j <= spaces; j++) {
                 str += " ";
             }
 
-            for (int j = 1; j <= i; j++) {
+            for (int j = 1; j <= n; j++) {
                 str += "*";
             }
 
             System.out.println(str);
-        }
-
-        for (int i = n; i >= 1; i--) {
-
-            String str = "";
-
-            for (int j = 1; j <= i; j++) {
-                str += "*";
-            }
-
-            int spaces = 2 * (n - i);
-
-            for (int j = 1; j <= spaces; j++) {
-                str += " ";
-            }
-
-            for (int j = 1; j <= i; j++) {
-                str += "*";
-            }
-
-            System.out.println(str);
-
         }
     }
 }
